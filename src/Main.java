@@ -15,7 +15,7 @@ public class Main {
             MODE mode = MODE.UNKNOWN;
             for (int i = 0; i < args.length; i++) {
                 switch (args[i]) {
-                    case "-gui":
+                    case "--gui":
                         uimode = UIMODE.GUI;
                         break;
                     case "-q":
@@ -72,7 +72,7 @@ public class Main {
             }
         } else {
             System.out.println("”кажите следующие параметры, чтобы запустить программу:\n" +
-                    "  -gui: в режиме графического интерфейса\n" +
+                    "  --gui: в режиме графического интерфейса\n" +
                     "    (никакие параметры больше можно не указывать);\n" +
                     "  -q: в \"тихом\" режиме\n" +
                     "    (консольный режим, никакие диагностические\n" +
